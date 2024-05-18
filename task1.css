@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@font-face {
+    font-family: myfont;
+    src: url(SedanSC.ttf);
+}
+*{
+    margin:0px;
+    list-style: none;
+    font-family: "Roboto";
+}
+.heading{
+    background-image:repeating-linear-gradient(155deg,#333333,#333333 10px,#212020 40px);
+    height:105px;
+    padding:0px;
+}
+.heading h1{
+    color: rgb(255, 255, 255);
+    font-family: myfont;
+    font-weight: 500;
+    font-size:70px;
+    padding:10px;
+    margin:0px;
+}
+.Navicon{
+    padding:12px;
+    font-size: 25px;
+    float: right;
+    font-weight:900;
+}
+#activeNav{
+    background-color: #0c0a22;
+    color:white;
+}
+.navbar{
+    background-color: white;
+    overflow: hidden;
+}
+.navbar a{
+    float: left; 
+    display: block;
+    color:#212020;
+    font-size:15px;
+    padding:15px;
+    text-decoration: none;
+}
+.hoverbar .dropdown{
+    display:none;
+    background-image: linear-gradient(whitesmoke,rgb(200, 166, 166));
+    position: absolute;
+    width:180px;
+    
+}
+.hoverbar:hover{
+    color:red;
+}
+.hoverbar:hover .dropdown{
+    display: inline;
+    position: absolute;
+}
+.BreakingNews{
+    flex:row;
+    background-color: #dad8d895;
+    font-size: 14px;
+    padding:10px;
+    padding-left:40px;
+    margin:0px;
+}
+.BreakingNews h3{
+    display:inline-block;
+    padding-left:7px;
+}
+.BreakingNews div{
+    display: inline-block;
+    padding: right auto;
+}
+.BreakingNews p{
+    display: inline-block;
+    padding-left: 55px;
+    color:rgb(96, 139, 139);
+}
+.BreakingNews .WeatherIcon{
+    font-size: 22px;
+}
+.BreakingNews .date{
+    display: inline-block;
+    color:#6c6b6b;
+    padding-left:10px;
+}
+.BreakingNews .rightBox{
+    float:right;
+}
+.mainbody{
+    padding-top:8vh;
+    display: flex;
+    justify-content: space-evenly;
+    height:70vh;
+    background-color: whitesmoke;
+}
+#News1{
+    background-image :url("images/news1.jpg");
+    background-size: cover;
+    width:30vw;
+    height:60vh;
+    border-radius:6px;
+    padding:15px;
+}
+#News2{
+    background-image :url("images/news2.jpg");
+    background-size: cover;
+    width:15vw;
+    height:60vh;
+    border-radius:6px;
+    padding:15px;
+}
+#News3{
+    background-image :url("images/news3.jpg");
+    background-size: cover;
+    width:15vw;
+    height:26vh;
+    border-radius:6px;
+    padding:15px;
+}
+#News4{
+    background-image :url("images/news4.jpg");
+    background-size: cover;
+    width:15vw;
+    margin-top:4vh;
+    height:26vh;
+    border-radius:6px;
+    padding:15px;
+}
+.News{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.genre{
+    display:inline-block;
+    background-color: black;
+    color:white;
+    border-radius: 15px;
+    font-size:13px;
+    padding:3px 8px;
+}
+.themeIcon{
+    height:20px;
+    width:20px;
+    border-radius: 10px;
+}
+.News h1{
+    color:white;
+    font-size:35px;
+    font-weight: lighter;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.News h2{
+    color:white;
+    font-size:20px;
+    font-weight: lighter;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.newsDetails p{
+    color:white;
+    display: inline-block;
+    padding-right:20px; 
+}
+.newsDetails i{
+    color:white;
+    padding-right: 2px;
+}
+.newsDetails{
+    display: flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap: 10px;
+}
+.allNews{
+    width:20vw;
+}
+.allNews .scrollbar{
+    height:65vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.allNews a{
+    text-decoration: none;
+    display:inline-block;
+    padding:15px 0;
+    text-align: center;
+}
+.allNews .Latest{
+    background-color: #0c0a22;
+    color:white;
+    width:10vw;
+    border-radius: 5px 0 0 5px;
+}
+.allNews .Popular{
+    color:#333333;
+    width:48%;
+    background-color: white;
+    border-radius: 0 5px 5px 0;
+}
+.newsCard{
+    display: flex;
+    padding:5px;
+    margin: 10px 0;
+    background-color: white;
+}
+.newsCard p{
+    color:#504e4e;
+    padding-bottom: 0;
+}
+.cardImg{
+    height:70px;
+    width:70px;
+    padding-right: 15px;
+}
